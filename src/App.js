@@ -38,7 +38,7 @@ function App() {
   
   return (
     <div className="App">
-      {state.users.map(user => (<div>{`${user.name} ${user.age}`}</div>))}
+      {state.users.map((user, index) => (<div  key={index}>{`${user.name} ${user.age}`}</div>))}
       <div className="form">
         <div className="form-name">
           <label>name:</label>
